@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Patrones</title>
+
+		
+		<link rel="stylesheet" href="dist/reset.css"> 
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">		
+        
+	
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+			
+                
+				<section  data-transition="fade"  data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+                    
+					<h1>PATRONES DE DISEÑO</h1>						
+
+				</section>
+					
+				
+				<section data-transition="convex" data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)"  >
+
+					<p>Los patrones de diseño son soluciones habituales a problemas
+						 que ocurren con frecuencia en el diseño de software. 
+						 Son como planos prefabricados que se pueden personalizar para resolver
+						un problema de diseño recurrente en tu código.</p>
+				</section>
+
+				<section>
+					<section data-transition="zoom" data-background-gradient="linear-gradient(to bottom, #E8E4E2, #000000)">
+
+						<h2>Datos importantes</h2>
+						<br>
+						<p>A continuacion encontraras algunos 
+							datos importantes de los patrones de diseño, como
+							sus ventajas, clasificaciones e historia
+						</p>
+						<a href="#/2/1" class="navigate-down">
+						</a>
+					</section>
+				
+
+					<section data-transition="zoom" data-background-gradient="linear-gradient(to bottom, #E8E4E2, #000000)">
+
+						<h2>Ventajas de los patrones de diseño</h2>
+						<br>
+						<p>Los patrones son un juego de herramientas que
+							brindan soluciones a problemas habituales
+							en el diseño de software. Definen un
+							lenguaje común que ayuda a tu
+							equipo a comunicarse
+							con más eficiencia.</p>
+					</section>
+					
+					<section data-transition="zoom" data-background-gradient="linear-gradient(to bottom, #E8E4E2, #000000)">
+
+						<h2>Clasificacion</h2>
+						<br>
+						<p>Los patrones de diseño varían en su complejidad,
+							nivel de detalle y escala de aplicabilidad.
+							Además, pueden clasificarse por su
+							propósito y dividirse en tres grupos.</p>
+					</section>
+
+					<section data-transition="zoom" data-background-gradient="linear-gradient(to bottom, #E8E4E2, #000000)">
+
+						<h2>Historia de los patrones de diseño</h2>
+						<br>
+						<p>El concepto de los patrones fue descrito por Christopher Alexander 
+							en El lenguaje de patrones.
+							 El libro habla de un “lenguaje” para diseñar el entorno urbano. 
+							 La idea fue recogida por cuatro autores: Erich Gamma, John Vlissides, Ralph Johnson y Richard Helm. En 1995, publicaron Patrones de diseño,
+							en el que aplicaron el concepto de los patrones de diseño a la programación. </p>
+						<br>
+					</section>
+					<section data-transition="zoom" data-background-gradient="linear-gradient(to bottom, #E8E4E2, #000000)">
+
+						<h2>Datos importantes</h2>						
+						<br>
+						<br>
+						<p>A continuacion encontraras algunos 
+							datos importantes de los patrones de diseño, como
+							sus ventajas, clasificaciones e historia
+						</p>
+						<a href="#/2">
+						</a>
+					</section>
+				</section>	
+
+				<section data-transition="fade" data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h2>Tipos de patrones de diseño</h2>
+					<div class="r-hstack justify-center">
+						<div data-id="box1" style="background: #f50707; width: 50px; height: 200px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box2" style="background: #02ef16; width: 50px; height: 400px; margin: 10px; border-radius: 5px;"></div>
+                        <div data-id="box3" style="background: #f4fd04; width: 50px; height: 200px; margin: 10px; border-radius: 5px;"></div>
+					</div>
+					<p>Se categorizan en 3 categorias principales:</p>
+
+				</section>
+
+				<section data-transition="fade">
+                    <div class="r-hstack justify-center">
+					</div>
+                    <div data-id="box1" style="background: #f50707; width: 200px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+                    <h3 style="margin-top: 12px;">1. Patrones Creacionales</h3>
+                    <div data-id="box2" style="background: #02ef16; width: 400px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+                    <h3 style="margin-top: 12px;">2. Patrones Estructurales</h3>
+                    <div data-id="box3" style="background: #f4fd04; width: 600px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+                    <h3 style="margin-top: 12px;">3. Patrones de Comportamiento</h3>
+					
+				</section>
+                
+                <!--patrones creacionales-->
+                <section>
+                    <section data-background-gradient="linear-gradient(to bottom,  #E8E4,#000000 )">
+                        <h2>Patrones Creacionales</h2>
+                        <br>
+                        <p>Los patrones creacionales proporcionan varios mecanismos
+                            de creación de objetos que incrementan la
+                            flexibilidad y la reutilización del código existente.
+                        </p>
+                        <a href="#/2/1" class="navigate-down">
+                        </a>
+                    </section>
+                
+                    <section data-background-gradient="linear-gradient(to bottom, #FF5733, #FFC300 )">
+                        <h2>FACTORY METHOD</h2>
+                        <h4>También llamado: Método fábrica, Constructor virtual</h4>
+                        <br>
+                        <p>Factory Method es un patrón de diseño creacional que proporciona una interfaz para crear objetos en una superclase,
+                            mientras permite a las subclases alterar el tipo de objetos que se crearán.</p>
+                    </section>
+                
+                    <section data-background-gradient="linear-gradient(to bottom, #581845, #C70039 )">
+                        <h2>ABSTRACT FACTORY</h2>
+                        <h4>También llamado: fábrica abstracta</h4>
+                        <br>
+                        <p>Abstract Factory es un patrón de diseño creacional que nos permite producir familias de objetos relacionados sin especificar sus clases concretas.</p>
+                    </section>
+                
+                    <section data-background-gradient="linear-gradient(to bottom, #900C3F, #FF5733 )">
+                        <h2>BUILDER</h2>
+                        <h4>También llamado: Constructor</h4>
+                        <br>
+                        <p>Builder es un patrón de diseño creacional que nos permite construir objetos complejos paso a paso.
+                            El patrón nos permite producir distintos tipos y representaciones de un objeto empleando el mismo código de construcción.</p>
+                        <br>
+                    </section>
+                
+                    <section data-background-gradient="linear-gradient(to bottom, #C70039, #FFC300 )">
+                        <h2>PROTOTYPE</h2>
+                        <h4>También llamado: Prototipo, Clon, Clone</h4>
+                        <br>
+                        <p>Prototype es un patrón de diseño creacional que nos permite copiar objetos existentes sin que el código dependa de sus clases.</p>
+                    </section>
+                
+                    <section data-background-gradient="linear-gradient(to bottom, #FF5733, #900C3F )">
+                        <h2>SINGLETON</h2>
+                        <h4>También llamado: Instancia única</h4>
+                        <br>
+                        <p>Singleton es un patrón de diseño creacional que nos permite asegurarnos de que una clase tenga una única instancia,
+                            a la vez que proporciona un punto de acceso global a dicha instancia.</p>
+                    </section>
+                
+                    <section data-background-gradient="linear-gradient(to bottom, #C70039, #FFC300 )">
+                        <h2>Patrones Creacionales</h2>
+                        <br>
+                        <p>Los patrones creacionales proporcionan varios mecanismos
+                            de creación de objetos que incrementan la
+                            flexibilidad y la reutilización del código existente.
+                        </p>
+                        <a href="#/2">
+                            <img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(180deg);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Up arrow">
+                        </a>
+                    </section>
+                </section>
+                
+
+				
+				<!--Patrones estructurales-->
+				<section>
+                    <section data-transition="concave" data-background-gradient="linear-gradient(to bottom, #000000, #CAE4DD )">
+                        <h2>PATRONES ESTRUCTURALES</h2>
+                        <br>
+                        <p>Los patrones estructurales explican cómo ensamblar objetos y clases en estructuras más grandes, 
+                            a la vez que se mantiene la flexibilidad y eficiencia de estas estructuras.
+                            
+                        </p>
+                        
+                        <a href="#/2/1" class="navigate-down"></a>
+                    </section>
+                
+                    <section data-transition="concave" data-background-gradient="linear-gradient(to bottom, #FF5733, #FFC300 )">
+                        <h2>ADAPTER</h2>	
+                        <h4>También llamado: Adaptador, Envoltorio, Wrapper</h4>
+                        <br>
+                        <p>Adapter es un patrón de diseño estructural que permite la colaboración entre objetos con interfaces incompatibles.</p>
+                    </section>
+                
+                    <section data-transition="concave" data-background-gradient="linear-gradient(to bottom, #581845, #C70039 )">
+                        <h2>BRIDGE</h2>	
+                        <h4>También llamado: Puente</h4>
+                        <br>
+                        <p>Bridge es un patrón de diseño estructural que te permite dividir una clase grande,
+                             o un grupo de clases estrechamente relacionadas, en dos jerarquías separadas 
+                             (abstracción e implementación) que pueden desarrollarse independientemente la una de la otra.</p>
+                    </section>
+                
+                    <section data-transition="concave" data-background-gradient="linear-gradient(to bottom, #900C3F, #FF5733 )">
+                        <h2>COMPOSITE</h2>	
+                        <h4>También llamado: Objeto compuesto, Object Tree</h4>
+                        <br>
+                        <p>Composite es un patrón de diseño estructural que te permite componer objetos en estructuras de árbol y trabajar con esas
+                             estructuras como si fueran objetos individuales.</p>
+                    </section>
+                
+                    <section data-transition="concave" data-background-gradient="linear-gradient(to bottom, #C70039, #FFC300 )">
+                        <h2>DECORATOR</h2>	
+                        <h4>También llamado: Decorador, Envoltorio, Wrapper</h4>
+                        <br>
+                        <p>Decorator es un patrón de diseño estructural que te permite añadir funcionalidades a objetos colocando estos
+                             objetos dentro de objetos encapsuladores especiales que contienen estas funcionalidades.</p>
+                    </section>
+                
+                    <section data-transition="concave" data-background-gradient="linear-gradient(to bottom, #FF5733, #900C3F )">
+                        <h2>FACADE</h2>	
+                        <h4>También llamado: fachada</h4>
+                        <br>
+                        <p>Facade es un patrón de diseño estructural que proporciona una interfaz simplificada a una biblioteca, un framework o cualquier otro grupo complejo de clases.</p>
+                    </section>
+                
+                    <section data-transition="concave" data-background-gradient="linear-gradient(to bottom, #C70039, #FFC300 )">
+                        <h2>FLYWEIGHT</h2>	
+                        <h4>También llamado: Peso mosca, Peso ligero, Cache</h4>
+                        <br>
+                        <p>Flyweight es un patrón de diseño estructural que te permite mantener más objetos dentro de la cantidad disponible de RAM compartiendo las partes
+                             comunes del estado entre varios objetos en lugar de mantener toda la información en cada objeto.</p>
+                    </section>
+                
+                    <section data-transition="concave" data-background-gradient="linear-gradient(to bottom, #000000, #CAE4DD )">
+                        <h2>PROXY</h2>	
+                        <br>
+                        <p>Proxy es un patrón de diseño estructural que te permite proporcionar un sustituto o marcador de posición para otro objeto. 
+                            Un proxy controla el acceso al objeto original, permitiéndote hacer algo antes o después de que la solicitud llegue al objeto original.</p>
+                    </section>
+                
+                    <section data-transition="concave" data-background-gradient="linear-gradient(to bottom, #000000, #CAE4DD )">
+                        <h2>PATRONES ESTRUCTURALES</h2>
+                        <br>
+                        <p>Los patrones estructurales explican cómo ensamblar objetos y clases en estructuras más grandes, 
+                            a la vez que se mantiene la flexibilidad y eficiencia de estas estructuras.
+                        </p>
+                        <a href="#/2"></a>
+                    </section>
+                </section>
+                
+				
+
+				<!--Patrones de comportamiento-->
+
+                <section data-transition="convex" ">
+                    <section data-transition="convex" data-background-gradient="linear-gradient(to bottom, #CAE4DD, #00AA00)">
+                        <h2>PATRONES DE COMPORTAMIENTO</h2>
+                        <br>
+                        <p>Los patrones de comportamiento tratan con algoritmos y la asignación de responsabilidades entre objetos.</p>
+                        <a href="#/2/1" class="navigate-down">
+                            <div data-id="box2" style="background: #02ef16; width: 900px; height: 200px; margin: 20px; border-radius: 35px;"></div>
+                        </a>
+                    </section>
+                    <section data-transition="convex" data-background-gradient="linear-gradient(to bottom, #CAE4DD, #00AA00)">
+                        <h2>CHAIN OF RESPONSABILITY</h2>    
+                        <h4>También llamada: Cadena de responsabilidad, CoR, Chain of Command</h4>
+                        <br>
+                        <p>Chain of Responsibility es un patrón de diseño de comportamiento que te permite pasar solicitudes a lo largo de una cadena de manejadores. Al recibir una solicitud, cada manejador decide si la procesa o si la pasa al siguiente manejador de la cadena.</p>
+                    </section>
+                    <section data-transition="convex" data-background-gradient="linear-gradient(to bottom, #CAE4DD, #00AA00)">
+                        <h2>COMMAND</h2>    
+                        <h4>También llamada: Comando, Order, Action, Transaction</h4>
+                        <br>
+                        <p>Command es un patrón de diseño de comportamiento que convierte una solicitud en un objeto independiente que contiene toda la información sobre la solicitud. Esta transformación te permite parametrizar los métodos con diferentes solicitudes, retrasar o poner en cola la ejecución de una solicitud y soportar operaciones que no se pueden realizar.</p>
+                    </section>
+                    <section data-transition="convex" data-background-gradient="linear-gradient(to bottom, #CAE4DD, #00AA00)">
+                        <h2>ITERATOR</h2>    
+                        <h4>También llamada: Iterator</h4>
+                        <br>
+                        <p>Iterator es un patrón de diseño de comportamiento que te permite recorrer elementos de una colección sin exponer su representación subyacente (lista, pila, árbol, etc.).</p>
+                    </section>
+                    <section data-transition="convex" data-background-gradient="linear-gradient(to bottom, #CAE4DD, #00AA00)">
+                        <h2>MEDIATOR</h2>    
+                        <h4>También llamada: Mediador, Intermediary, Controller</h4>
+                        <br>
+                        <p>Mediator es un patrón de diseño de comportamiento que te permite reducir las dependencias caóticas entre objetos. 
+                            El patrón restringe las comunicaciones directas entre los objetos, forzándolos a colaborar únicamente a través de un objeto mediador.</p>
+                    </section>
+                    <section data-transition="convex" data-background-gradient="linear-gradient(to bottom, #CAE4DD, #00AA00)">
+                        <h2>MEMENTO</h2>    
+                        <h4>También llamada: Recuerdo, Instantánea, Snapshot</h4>
+                        <br>
+                        <p>Memento es un patrón de diseño de comportamiento que te permite guardar y restaurar el estado previo de un objeto sin revelar los detalles de su implementación.</p>
+                    </section>
+                    <section data-transition="convex" data-background-gradient="linear-gradient(to bottom, #CAE4DD, #00AA00)">
+                        <h2>OBSERVER</h2>    
+                        <h4>También llamada: Observador, Publicación-Suscripción, Modelo-patrón, Event-Subscriber, Listener</h4>
+                        <br>
+                        <p>Observer es un patrón de diseño de comportamiento que te permite definir un mecanismo de suscripción para notificar a varios objetos sobre cualquier evento que le suceda al objeto que están observando.</p>
+                    </section>
+                    <section data-transition="convex" data-background-gradient="linear-gradient(to bottom, #CAE4DD, #00AA00)">
+                        <h2>STATE</h2>    
+                        <h4>También llamada: Estado</h4>
+                        <br>
+                        <p>State es un patrón de diseño de comportamiento que permite a un objeto alterar su comportamiento cuando su estado interno cambia. Parece como si el objeto cambiara su clase.</p>
+                    </section>
+                    <section data-transition="convex" data-background-gradient="linear-gradient(to bottom, #CAE4DD, #00AA00)">
+                        <h2>STRATEGY</h2>    
+                        <h4>También llamada: Estrategia</h4>
+                        <br>
+                        <p>Strategy es un patrón de diseño de comportamiento que te permite definir una familia de algoritmos, colocar cada uno de ellos en una clase separada y hacer sus objetos intercambiables.</p>
+                    </section>
+                    <section data-transition="convex" data-background-gradient="linear-gradient(to bottom, #CAE4DD, #00AA00)">
+                        <h2>TEMPLATE METHOD</h2>    
+                        <h4>También llamada: Método plantilla</h4>
+                        <br>
+                        <p>Template Method es un patrón de diseño de comportamiento que define el esqueleto de un algoritmo en la superclase pero permite que las subclases sobrescriban pasos del algoritmo sin cambiar su estructura.</p>
+                    </section>
+                    <section data-transition="convex" data-background-gradient="linear-gradient(to bottom, #CAE4DD, #00AA00)">
+                        <h2>VISITOR</h2>    
+                        <h4>También llamada: Visitante</h4>
+                        <br>
+                        <p>Visitor es un patrón de diseño de comportamiento que te permite separar algoritmos de los objetos sobre los que operan.</p>
+                    </section>            
+                    <section data-transition="convex" data-background-gradient="linear-gradient(to bottom, #CAE4DD, #00AA00)">
+                        <h2>PATRONES DE COMPORTAMIENTO</h2>
+                        <br>
+                        <p>Los patrones de comportamiento tratan con algoritmos y la asignación de responsabilidades entre objetos.</p>
+                        <a href="#/2">
+                            <img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(180deg);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Up arrow">
+                        </a>
+                    </section>
+                </section>
+                
+				
+				
+                <section data-auto-animate data-auto-animate-easing="ease-in-out" data-auto-animate-type="fade">
+                    <div class="circle" data-id="circle5" data-auto-animate-delay="0.4"></div>
+                    <div class="circle" data-id="circle1" data-auto-animate-delay="0"></div>
+                    <div class="circle" data-id="circle2" data-auto-animate-delay="0.1"></div>
+                    <div class="circle" data-id="circle3" data-auto-animate-delay="0.2"></div>
+                    <div class="circle" data-id="circle4" data-auto-animate-delay="0.3"></div>
+                </section>
+                
+                <style>
+                    .circle {
+                        width: 100px;
+                        height: 100px;
+                        background: #681806;
+                        border-radius: 50%;
+                        margin: 20px;
+                    }
+                </style>
+                
+                
+                <section data-auto-animate data-auto-animate-easing="ease-in-out">
+                    <div class="circle" data-id="circle1" data-auto-animate-delay="0.1" ></div>
+                    <h2 style="margin-top: 20px;">Con esta informacion</h2>
+                    <div class="circle" data-id="circle2" data-auto-animate-delay="0.2"></div>
+                    <h2 style="margin-top: 20px;">Podemos concluir:</h2>
+                    <div class="circle" data-id="circle3" data-auto-animate-delay="0.3"></div>
+                </section>
+                
+                <style>
+                    .circle {
+                        width: 100px;
+                        height: 100px;
+                        background: #fe0e02;
+                        border-radius: 50%;
+                        margin: 20px;
+                    }
+                </style>
+                
+                
+
+                <section data-transition="zoom" data-background-gradient="linear-gradient(to bottom, #E8E4E2, #000000)">
+
+					<p>Que al utilizar patrones de diseño, los desarrolladores pueden aprovechar soluciones probadas y efectivas para problemas comunes, 
+						lo que puede mejorar la calidad del software, facilitar el mantenimiento y promover una mejor comprensión del diseño entre los miembros del equipo.
+						 Sin embargo, es importante recordar que no todos los problemas requieren la aplicación de patrones de diseño, y su elección debe basarse en una comprensión 
+						 sólida de las necesidades del proyecto y de cómo un patrón encajará en el contexto específico.</p>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">Gracias.......</h2>
+					<h5>Robinson penagos</h5>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-stack">
+						<div data-id="box1" style="background: #324CED; width: 300px; height: 300px; border-radius: 200px;"></div>
+						<div data-id="box2" style="background: #EDE61A; width: 200px; height: 200px; border-radius: 200px;"></div>
+						<div data-id="box3" style="background: #E102ED; width: 100px; height: 100px; border-radius: 200px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">fIN</h2>
+				</section>
+
+
+				
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
